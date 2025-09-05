@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100%;
+      background-color: #0b1f3a; /* Deep storm blue */
+      font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+      color: #dceeff; /* Misty pale blue */
+      text-shadow: 1px 1px 3px rgba(10, 20, 30, 0.7);
+      box-sizing: border-box;
+      overflow-y: auto;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-bottom: 24px;
+      letter-spacing: 1px;
+      border-bottom: 1px solid rgba(220,238,255,0.2);
+      padding-bottom: 8px;
+      text-align: center;
+    }
+
+    .section {
+      margin-bottom: 28px;
+      padding: 16px;
+      background-color: rgba(220,238,255,0.05); /* subtle mist tint */
+      border-radius: 12px;
+      width: 100%;
+      max-width: 720px;
+      box-shadow: 0 0 20px rgba(10, 20, 30, 0.6);
+      backdrop-filter: blur(6px);
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    .section h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+      border-left: 4px solid #6cb4c4; /* cool aqua accent */
+      padding-left: 12px;
+    }
+
+    .section p {
+      font-size: 16px;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h2 { font-size: 22px; }
+      .section h3 { font-size: 18px; }
+      .section p { font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h2>Typhoon Safety</h2>
+
+    <div class="section">
+      <h3>🌪️ What to Do</h3>
+      <p>Monitor weather advisories, stay indoors in a safe place, prepare an emergency kit, and keep updated from reliable sources.</p>
+    </div>
+
+    <div class="section">
+      <h3>🚫 What to Avoid</h3>
+      <p>Don't go outside or wade through floodwaters, use submerged electrical equipment, ignore evacuation orders, or approach fallen power lines.</p>
+    </div>
+
+    <div class="section">
+      <h3>🏠 Stay Safe</h3>
+      <p>Secure your home, stay away from windows, and be cautious of flying debris and live wires.</p>
+    </div>
+  </div>
+</body>
+</html>
